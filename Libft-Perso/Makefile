@@ -6,7 +6,7 @@
 #    By: tguerran <tguerran@student.42lehavre.fr    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/20 10:51:41 by tguerran          #+#    #+#              #
-#    Updated: 2024/04/16 00:35:29 by tguerran         ###   ########.fr        #
+#    Updated: 2024/06/05 16:19:54 by tguerran         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,6 +58,8 @@ SRC = ft_atoi.c \
 		ft_putstr.c \
 		ft_putunbr.c \
 		ft_atof.c \
+		ft_strtoll.c \
+		ft_strcat.c
 
 
 SRCB = 	ft_lstnew.c	 \
