@@ -6,7 +6,7 @@
 /*   By: tguerran <tguerran@student.42lehavre.fr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 10:38:03 by tguerran          #+#    #+#             */
-/*   Updated: 2024/06/05 16:19:45 by tguerran         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:39:23 by tguerran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ int			ft_atoi(const char *nptr);
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
 int			ft_printf(const char *format, ...);
 int			ft_strcmp(const char *s1, const char *s2);
+int			ft_numstr(char *str);
+int			ft_isnumeric(const char *str);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strnstr(const char *big, const char *little, size_t len);
@@ -49,6 +51,9 @@ char		*ft_itoa(int n);
 char		*ft_strcat(char *dest, const char *src);
 char		**ft_split(char const *s, char c);
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char		*ft_strndup(const char *s, size_t n);
+char		*ft_strncpy(char *dest, char *src, unsigned int n);
+char		*ft_strncat(char *dest, const char *src, size_t n);
 void		*ft_memset(void *s, int c, size_t n);
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
 void		ft_bzero(void *s, size_t n);
@@ -71,7 +76,10 @@ size_t		ft_puthex_l(unsigned int nb);
 size_t		ft_puthex_u(unsigned int nb);
 size_t		ft_putunbr(unsigned int nb);
 size_t		ft_putptr(void *nb);
+size_t		ft_strcspn(const char *s1, const char *s2);
+size_t		ft_strcpy(char *dest, const char *src);
 long long	ft_strtoll(const char *nptr, char **endptr);
+long long	ft_atoll(const char *str);
 t_list		*ft_lstnew(void *content);
 void		ft_lstadd_front(t_list **lst, t_list *new);
 int			ft_lstsize(t_list *lst);
